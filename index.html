@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Tiong - Academic Profile</title>
+    <meta name="description" content="Professional academic website for Daniel Tiong, focusing on accessibility.">
+    <!-- Search Engine Indexing -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner" class="site-header">
+        <div class="container header-container">
+            <div class="site-branding">
+                <a href="index.html" class="site-title" aria-label="Home page">Daniel Tiong</a>
+                <p class="site-subtitle">Tutor / Assistant Lecturer, Department of Economics</p>
+            </div>
+
+            <nav role="navigation" aria-label="Main Navigation" class="main-nav">
+                <button aria-expanded="false" aria-controls="nav-list" class="mobile-nav-toggle">
+                    <span class="sr-only">Menu</span>
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+                <ul id="nav-list" class="nav-list">
+                    <li><a href="#about" aria-current="page">About</a></li>
+                    <li><a href="#reading-group">Reading Group</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#teaching">Teaching</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                            <span aria-hidden="true">🌓</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section id="about" class="hero-section" aria-labelledby="about-heading">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1 id="about-heading">Daniel Tiong</h1>
+                    <p class="lead">I am a Tutor and Assistant Lecturer in the Department of Economics at The University
+                        of Melbourne. My work focuses on applied economics, economic theory, and econometrics.</p>
+                    <div class="hero-links">
+                        <a href="mailto:daniel.tiong@unimelb.edu.au" class="btn btn-primary"
+                            aria-label="Email Daniel Tiong">Contact Me</a>
+                        <a href="../ResumeMar2025.pdf" class="btn btn-secondary">Download CV</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="DTiong_photo.jpg" alt="Headshot of Daniel Tiong" width="400" height="400">
+                </div>
+            </div>
+        </section>
+
+        <section id="teaching" class="content-section" aria-labelledby="teaching-heading">
+            <div class="container">
+                <h2 id="teaching-heading">Teaching &amp; Educational Philosophy</h2>
+                <div class="grid-cards" style="grid-template-columns: 1fr;">
+                    <article class="card">
+                        <h3>My Teaching Philosophy</h3>
+                        <p>In over a decade of teaching across all levels of the economics curriculum, my approach is
+                            grounded in three core principles:</p>
+                        <ul style="margin-left: 1.5rem; margin-top: 1rem; margin-bottom: 1.5rem;">
+                            <li><strong>Accessibility:</strong> Reaching students both inside and outside the classroom
+                                with diverse supporting materials.</li>
+                            <li><strong>Facilitating Understanding:</strong> Emphasizing clear, intuitive explanations
+                                that encourage critical thinking rather than memorization.</li>
+                            <li><strong>Engagement &amp; Adaptability:</strong> Cultivating safe learning environments
+                                and tailoring curriculums to meet the specific needs of each cohort.</li>
+                        </ul>
+
+                        <h3>Selected Subjects Instructed</h3>
+                        <ul style="margin-left: 1.5rem; margin-top: 1rem; margin-bottom: 1.5rem;">
+                            <li><strong>Math Camp Instructor (Honours/Masters/PhD)</strong></li>
+                            <li><strong>Advanced Econometrics &amp; Time Series</strong> (ECOM40006/90013,
+                                ECOM30004/90004, ECOM30002/90002)</li>
+                            <li><strong>Advanced Macroeconomics &amp; Data Analysis</strong> (ECON40002, ECON90025)</li>
+                            <li><strong>Microeconomics &amp; Industrial Organization</strong> (ECON20002, ECON30003,
+                                ECON20005)</li>
+                        </ul>
+                        <p style="margin-top: 1.5rem;"><em>For a comprehensive list of all subjects taught since 2013,
+                                please refer to my <a href="../ResumeMar2025.pdf">CV</a>.</em></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="reading-group" class="content-section bg-light" aria-labelledby="reading-heading">
+            <div class="container">
+                <h2 id="reading-heading">Factor Models Reading Group</h2>
+                <p class="lead" style="margin-bottom: 2rem;">I am facilitating the PhD Reading Group on "The
+                    Econometrics of Factor Models" (Semester 1, 2026).</p>
+                <div class="grid-cards">
+                    <article class="card">
+                        <h3>Overview</h3>
+                        <p>A 12-week program aimed at graduate students in economics covering foundational factors,
+                            classical asset pricing, FAVAR, and Bayesian approaches.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Topics Covered</h3>
+                        <p>From Stock &amp; Watson (2002) bridging cross-sectional to time-series, all the way to recent
+                            machine learning methods in empirical asset pricing.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Resources</h3>
+                        <p><a href="../ReadingGroupOverview/FactorReadingGroup_Outline.pdf"
+                                aria-label="Download Reading Group Syllabus PDF">Download Syllabus (PDF)</a></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="content-section bg-light" aria-labelledby="publications-heading">
+            <div class="container">
+                <h2 id="publications-heading">Publications</h2>
+                <div class="grid-cards">
+                    <article class="card">
+                        <h3>Empirical Research: Getting Started with Stata</h3>
+                        <p><em>The Australian Economic Review</em> (2017)</p>
+                        <p>A guide for those new to empirical research, providing a foundation in using Stata.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo" class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <p>&copy; <span id="current-year"></span> Daniel Tiong. All rights reserved.</p>
+                <p>Designed with <a href="https://www.w3.org/WAI/standards-guidelines/wcag/"
+                        aria-label="Web Content Accessibility Guidelines">WCAG 2.1 AA</a> compliance in mind.</p>
+            </div>
+            <div class="social-links">
+                <a href="https://orcid.org/0009-0003-3719-1402" aria-label="ORCID Profile">ORCID</a>
+                <a href="../ResumeMar2025.pdf" aria-label="Download CV">CV</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Theme Toggle
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme');
+
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            let theme = document.documentElement.getAttribute('data-theme');
+            let newTheme = theme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+</body>
+
+</html>
